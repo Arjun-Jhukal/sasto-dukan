@@ -1,0 +1,54 @@
+.header {
+  .header-content {
+    ul {
+      &.primary-menu {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: all 0.3s ease-in-out;
+
+        &.active {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0);
+        }
+      }
+      li {
+        &:not(:last-child) {
+          margin-bottom: 4px;
+        }
+        &.active {
+          a {
+            background-color: #ff4500;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    .header-content {
+      ul {
+        &.primary-menu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0);
+        }
+        li {
+          a {
+            color: #1a1a1a;
+          }
+          &.active {
+            a {
+              background-color: transparent;
+              color: #ff4500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
