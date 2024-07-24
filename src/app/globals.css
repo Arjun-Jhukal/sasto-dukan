@@ -37,7 +37,7 @@ p {
   }
 
   .section-title {
-    @apply mb-10 text-center max-w-[768px] mx-auto;
+    @apply mb-10;
   }
   .section-title h2 {
     @apply mb-1;
