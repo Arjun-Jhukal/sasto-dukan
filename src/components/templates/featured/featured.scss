@@ -1,0 +1,22 @@
+.shop-btn {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: #1a1a1a;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &-light {
+    &::after {
+      background-color: #fff;
+    }
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,19 @@
+.footer {
+  .footer-menu {
+    ul {
+      li {
+        &:not(:last-child) {
+          @apply mb-3;
+        }
+        a {
+          &:hover {
+            color: #ff4500;
+          }
+        }
+      }
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+}

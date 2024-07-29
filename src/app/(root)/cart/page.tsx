@@ -13,7 +13,7 @@ export default function CartPage() {
           </p>
         </div>
         <div className="cart-content-box lg:grid grid-cols-12 gap-8">
-          <div className="col-span-8 mb-8 mb-lg-0">
+          <div className="col-span-8 mb-8 lg:mb-0">
             <div className="bg-white rounded-[12px] p-8">
               <table className="table w-full">
                 <thead className="thead">

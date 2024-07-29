@@ -5,7 +5,7 @@ import backgroundImage from "/page-banner.png";
 export default function LandingPageBanner() {
   return (
     <section
-      className="landing-page-banner bg-cover bg-center py-[120px]"
+      className="landing-page-banner bg-cover bg-center py-[120px] section-gap"
       style={{
         backgroundImage: `url(/page-banner.png)`,
       }}

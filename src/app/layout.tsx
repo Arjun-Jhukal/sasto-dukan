@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Jost, Poppins } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/templates/Footer";
 
 const inter = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600"] });
+const jost = Jost({ subsets: ["latin"], weight: ["300", "400", "500", "600"] });
 
 export const metadata: Metadata = {
   title: {
@@ -40,7 +42,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
