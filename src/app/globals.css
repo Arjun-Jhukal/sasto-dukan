@@ -30,10 +30,18 @@ p {
 }
 @layer utilities {
   .os-btn-filled {
-    @apply bg-primary block py-2 text-white rounded-[4px];
+    @apply block rounded-[4px];
   }
   .os-btn-text {
     @apply font-[500];
+  }
+  .os-btn-rounded {
+    @apply px-12 rounded-[25px];
+  }
+
+  .os-btn-filled,
+  .os-btn-rounded {
+    @apply bg-primary  py-2  text-white  transition-all duration-300 ease-in-out hover:opacity-50;
   }
 
   .section-title {

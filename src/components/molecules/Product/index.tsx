@@ -9,6 +9,7 @@ export default function SingleProduct() {
         <Image src={"/product-01.jpg"} alt="Product Image" layout="fill" objectFit="contain" />
       </div>
       <div className="product-detail text-center">
+        {/* react/no-unescaped-entities */}
         <span className="text-primary">Men's Clothing</span>
         <Link href={"#"} className="block mb-4">
           <h4>Cotton Jacket</h4>

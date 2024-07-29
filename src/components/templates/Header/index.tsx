@@ -12,7 +12,6 @@ export default function Header() {
 
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
 
-  console.log(pathname);
   return (
     <>
       <header className="header py-4 md:py-2 bg-white">
@@ -75,6 +74,14 @@ export default function Header() {
                   className="block px-4 py-2 lg:px-0 lg:py-0 rounded-md text-white hover:bg-primary hover:text-white lg:text-gray-950 hover:bg-transparent lg:hover:text-primary"
                 >
                   Women
+                </Link>
+              </li>
+              <li className={pathname === "/sale" ? "active" : ""}>
+                <Link
+                  href={"/sale"}
+                  className="block px-4 py-2 lg:px-0 lg:py-0 rounded-md text-white hover:bg-primary hover:text-white lg:text-gray-950 hover:bg-transparent lg:hover:text-primary"
+                >
+                  Sale
                 </Link>
               </li>
             </ul>

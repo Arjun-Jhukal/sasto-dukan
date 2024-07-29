@@ -1,0 +1,14 @@
+.category-banner {
+  .cb-content {
+    ul {
+      li {
+        &.active {
+          a {
+            background-color: #fff;
+            color: #ff4500;
+          }
+        }
+      }
+    }
+  }
+}
