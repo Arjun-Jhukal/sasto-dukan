@@ -86,14 +86,14 @@ export default function Header() {
               </li>
             </ul>
             <div className="header-btn-group flex justify-end items-center gap-2">
-              <Link href={"#"}>
+              <Link href={"/account"}>
                 {authUser ? (
                   <Image src={"/reviewer-01.png"} alt="User Profile | Sasto Dukan" width={30} height={30} />
                 ) : (
                   <Image src={"/03.svg"} alt="User Profile | Sasto Dukan" width={30} height={30} />
                 )}
               </Link>
-              <Link href={"#"} className="relative">
+              <Link href={"/cart"} className="relative">
                 <Image src={"/02.svg"} alt="Users Cart | Sasto Dukan" width={30} height={30} />
                 <sup className="absolute right-0 top-0 bg-primary inline-block w-[15px] h-[15px] rounded-[50%] text-[10px] flex justify-center items-center text-white">
                   2

@@ -21,10 +21,18 @@ h3 {
 h4 {
   @apply text-[20px] leading-[29px] md:text-[24px] font-[500];
 }
+h5 {
+  @apply font-[500];
+}
 
 a {
   @apply inline-block transition-all duration-300 ease-in-out;
 }
+
+strong {
+  @apply font-[500];
+}
+
 p {
   color: #757575;
 }
