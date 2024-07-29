@@ -19,7 +19,7 @@ export default function SpecialSection() {
                   <Image src={"/special-01-1.jpg"} alt="" width={150} height={227} />
                 </div>
                 <div className="sci-text text-center">
-                  <Link href={"#"} className="bg-gray-300 inline-block py-1 px-3 rounded-[15px] mb-2">
+                  <Link href={"#"} className="bg-gray-300 inline-block py-1 px-3 rounded-[15px] mb-2 hover:bg-gray-500">
                     Men's
                   </Link>
                   <h6 className="mb-2">Rib-Knit Cardigan</h6>
@@ -34,7 +34,9 @@ export default function SpecialSection() {
                   <Image src={"/special-01-2.jpg"} alt="" width={150} height={227} />
                 </div>
                 <div className="sci-text text-center">
-                  <span className="bg-gray-300 inline-block py-1 px-3 rounded-[15px] mb-2">Men's</span>
+                  <Link href={"#"} className="bg-gray-300 inline-block py-1 px-3 rounded-[15px] mb-2 hover:bg-gray-500">
+                    Men's
+                  </Link>
                   <h6 className="mb-2">Rib-Knit Cardigan</h6>
                   <h4 className="mb-4">Rs. 750</h4>
                   <Link href={"#"} className="uppercase shop-btn">
