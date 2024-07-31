@@ -9,7 +9,7 @@ export default function CategoryBanner({ category }: { category: string }) {
           {/* react/no-unescaped-entities */}
           <h1 className="mb-6 text-white capitalize">{category}'s Category</h1>
 
-          <ul className="flex justify-start items-center gap-4">
+          <ul className="flex justify-start items-center flex-wrap gap-4">
             <li className="active">
               <Link
                 href="/men/top"
